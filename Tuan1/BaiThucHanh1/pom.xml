@@ -5,9 +5,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>iuh.fit.se</groupId>
-  <artifactId>BaiTap1</artifactId>
+  <artifactId>BaiThucHanh1</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>BaiTap1</name>
+  <name>BaiThucHanh1</name>
   <packaging>war</packaging>
 
   <properties>
