@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Tuan02">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tuan02</output-path>
+    <root id="root">
+      <element id="dir-copy" path="$PROJECT_DIR$/ThucHanhWWW/src/main/webapp" />
+    </root>
+  </artifact>
+</component>
