@@ -1,13 +1,11 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Quan ly dien thoai</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<h2>He thong quan ly dien thoai</h2>
+<a href="danhsach">Xem danh sach dien thoai</a> |
+<a href="them">Them dien thoai moi</a>
 </body>
 </html>
