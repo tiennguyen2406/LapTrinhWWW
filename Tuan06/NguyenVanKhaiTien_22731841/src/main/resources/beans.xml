@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- ========== Student with Collection Injection ========== -->
+    <bean id="class1" class="iuh.fit.se.model.Class_">
+        <property name="classId" value="DHKTPM17C"/>
+        <property name="className" value="Dai Hoc KTPM17C"/>
+    </bean>
+
+    <bean id="student2" class="iuh.fit.se.model.Student">
+        <property name="id" value="002"/>
+        <property name="name" value="Nguyen Van"/>
+        <property name="class_" ref="class1"/>
+        <property name="subjects">
+            <list>
+                <value>Java ++</value>
+                <value>Spring C</value>
+                <value>Database S</value>
+            </list>
+        </property>
+        <property name="hobbies">
+            <set>
+                <value>Play</value>
+                <value>Drink</value>
+                <value>Eat</value>
+            </set>
+        </property>
+        <property name="marks">
+            <map>
+                <entry key="Java" value="1"/>
+                <entry key="Spring" value="2"/>
+                <entry key="Database" value="3"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="student1" class="iuh.fit.se.model.Student">
+        <property name="id" value="22731841"/>
+        <property name="name" value="Nguyen Van Khai Tien"/>
+        <property name="class_" ref="class1"/>
+        <property name="subjects">
+            <list>
+                <value>Java Programming</value>
+                <value>Spring Framework</value>
+                <value>Database Systems</value>
+            </list>
+        </property>
+        <property name="hobbies">
+            <set>
+                <value>Reading</value>
+                <value>Coding</value>
+                <value>Gaming</value>
+            </set>
+        </property>
+        <property name="marks">
+            <map>
+                <entry key="Java" value="90"/>
+                <entry key="Spring" value="88"/>
+                <entry key="Database" value="85"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>
