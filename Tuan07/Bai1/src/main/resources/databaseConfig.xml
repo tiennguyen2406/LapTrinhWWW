@@ -9,10 +9,10 @@ http://www.springframework.org/schema/util/spring-util.xsd">
     <!-- bean definitions here -->
     <bean id="dataSource"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource" scope="singleton">
-        <property name="url" value="jdbc:mariadb://localhost:3306/employees"></property>
+        <property name="url" value="jdbc:mariadb://localhost:3306/company_db"></property>
         <property name="driverClassName" value="org.mariadb.jdbc.Driver"></property>
         <property name="username" value="root"></property>
-        <property name="password" value="sapassword"></property>
+        <property name="password" value="adichoidi123"></property>
     </bean>
 
     <bean id="employeeDAO" class="iuh.fit.se.dao.impl.EmployeeDAOImpl">

@@ -1,6 +1,14 @@
 package iuh.fit.se.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "employee")
 public class Employee {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String role;
     private String name;
@@ -29,12 +37,4 @@ public class Employee {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", role='" + role + '\'' +
-                ", name='" + name + '\'' +
-                '}';
-    }
 }

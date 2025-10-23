@@ -1,4 +1,4 @@
-package iuh.fit.se;
+package iuh.fit.se.JDBC;
 
 import iuh.fit.se.dao.EmployeeDAO;
 import iuh.fit.se.model.Employee;
@@ -32,7 +32,7 @@ public class SpringPureJdbcxmlConfigApplication {
 //        employeeDAO.save(emp);
 //        System.out.println("Saved employee: " + emp);
 
-        // Lấy nhân viên theo ID
+//         Lấy nhân viên theo ID
         Employee empFromDb = employeeDAO.getById(1);
         System.out.println("Employee from DB: " + empFromDb);
     }

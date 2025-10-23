@@ -1,13 +1,11 @@
-package iuh.fit.se;
+package iuh.fit.se.SpringBoot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Bai1Application {
-
+public class DemoApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Bai1Application.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
-
 }
